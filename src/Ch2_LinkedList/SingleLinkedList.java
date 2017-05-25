@@ -7,7 +7,7 @@ package Ch2_LinkedList;
  */
 public class SingleLinkedList {
 
-  public Node head;
+  public ListNode head;
   public int listCount;
 
   public SingleLinkedList() {
@@ -16,6 +16,21 @@ public class SingleLinkedList {
 
   public void printList() {
 
+  }
+
+  /**
+   * Given the head of Linked List, print all the elements
+   * @param head
+   */
+  public static void printLinkedList(ListNode head) {
+    while (head != null) {
+      System.out.print(head.data);
+      if (head.next != null) {
+        System.out.print("->");
+      }
+      head = head.next;
+    }
+    System.out.println();
   }
 
   /**
@@ -30,13 +45,13 @@ public class SingleLinkedList {
    * Append a node to tail
    * @param node
    */
-  public void add(Node node) {
+  public void add(ListNode node) {
 
     if (head == null) {
       head = node;
     }
 
-    Node current = head;
+    ListNode current = head;
 
     while (current.next != null) {
       current = current.next;
@@ -50,9 +65,9 @@ public class SingleLinkedList {
    * @param node
    * @param index
    */
-  public void insert(Node node, int index) {
+  public void insert(ListNode node, int index) {
 
-    Node current = head;
+    ListNode current = head;
     int count = 0;
 
     if (index > listCount || index < 1) {
@@ -76,9 +91,9 @@ public class SingleLinkedList {
    * Delete a node
    * @param node
    */
-  public boolean deleteNode(Node node) {
+  public boolean deleteNode(ListNode node) {
 
-    Node current = head;
+    ListNode current = head;
     while (current.next != null) {
 
       if (current.next == node) {
@@ -98,7 +113,7 @@ public class SingleLinkedList {
    */
   public boolean deletedNodeAtIndex(int index) {
 
-    Node current = head;
+    ListNode current = head;
     int count = 0;
 
     if (index > listCount || index < 1) {
