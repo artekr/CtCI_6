@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 /**
  * Created by hengwang on 2017-05-24.
+ *
  * Is Unique: Implement an algorithm to determine if a string has all unique characters.
  * What if you cannot use additional data structures?
  *
