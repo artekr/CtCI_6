@@ -1,3 +1,4 @@
+
 ### Chapter 2 Linked List
 
 A linked list is a data structure that represents a sequence of nodes.
