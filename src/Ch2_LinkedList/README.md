@@ -39,7 +39,7 @@ Recursive algorithms take at least *O(n)* space, where *n* is the depth of the r
 | 1. Remove Duplicates  | [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) <br> [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | 
 | 2. Return Kth to Last | [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) |
 | 3. Delete Middle Node | [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) |
-| 4. Partition          | |
+| 4. Partition    ★★★ | [86. Partition List](https://leetcode.com/problems/partition-list) |
 | 5. Sum Lists          | |
 | 6. Palindrome         | |
 | 7. Intersection       | |
