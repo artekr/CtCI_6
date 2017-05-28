@@ -41,7 +41,7 @@ Recursive algorithms take at least *O(n)* space, where *n* is the depth of the r
 | 3. Delete Middle Node | [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) |
 | 4. Partition    ★★★ | [86. Partition List](https://leetcode.com/problems/partition-list) |
 | 5. Sum Lists          | |
-| 6. Palindrome         | |
+| 6. Palindrome         | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number) <br> [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) <br> [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) |
 | 7. Intersection       | |
 | 8. Loop Detection     | |
 
