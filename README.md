@@ -26,3 +26,6 @@
   * [2.2 Return Kth To Last](./src/Ch2_LinkedList/_2_ReturnKthToLast)
   * [2.4 Partition](./src/Ch2_LinkedList/_4_Partition) ***
 
+###### 2017/05/28
+
+  * [2.6 Palindrome](.src/Ch2_LinkedList/_6_Palindrome)
