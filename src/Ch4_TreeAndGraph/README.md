@@ -3,7 +3,7 @@
 
 #### Tree
 
-* Types of Tree
+* **Types of Tree**
     * Trees vs. Binary Trees
     * Binary Tree vs. Binary Search Tree
         * _BST: all left descendents <= n < all right descendents_
@@ -19,14 +19,48 @@
     * Perfect Binary Trees
         * _Both full and complete_
 
-* Binary Tree Traversal
-    * In-Order Traversal
+* **Binary Tree Traversal**
+    * In-Order Traversal ★★★
+        * _left branch -> current node -> right branch._
+        ```java
+          void inOderTravsersal(TreeNode node) {
+            if (node != null) {
+              inOderTravsersal(node.left);
+              visit(node);
+              inOderTravsersal(node.right);
+            }
+          }
+        ```
     * Pre-Order Traversal
+        * _current node -> child nodes_
+        ```java
+          void preOderTravsersal(TreeNode node) {
+            if (node != null) {
+              visit(node);
+              inOderTravsersal(node.left);
+              inOderTravsersal(node.right);
+            }
+          }
+        ```
     * Post-Order Traversal
-    
-* Binary Heaps
+        * _child nodes -> current node_
+        ```java
+          void postOderTravsersal(TreeNode node) {
+            if (node != null) {
+              inOderTravsersal(node.left);
+              inOderTravsersal(node.right);
+              visit(node);
+            }
+          }
+        ```
+* **Binary Heaps**
     * Min-Heaps
+        * _A **complete binary tree** where each node is smaller than its children. The root is the minimum element in the tree._
+        * Two key operations:
+            1. `Insert`
+            2. `Extract Minimum Element`
     * Max-Heaps
+    
 
 * Tries (Prefix Trees)
 
@@ -37,9 +71,46 @@
     * Adjacency Matrices
     
 * Graph Search
+    ![](./img/DFS&BFS.png)
     * Depth-First Search (DFS)
+      
+      ```text
+      void DFS(Node root) {
+          if (root == null) return;
+          visit(root);
+          root.visited = true;
+          for each (Node n in node.adjacent) {
+              if (n.visited == false) {
+                  DFS(n);
+              }
+          }
+      }
+      ```
+
     * Breadth-First Search (BFS)
+      
+      ```text
+      void BFS(Node root) {
+          Queue queue = new Queue();
+          root.marked = true;
+          queue.enqueue(root); // Add to the end of queue
+          
+          while (!queue.isEmpty()) {
+              Node r= queue.dequeue(); // Remove from the front of the queue
+              visit(r);
+              foreach (Node n in r.adjacent) {
+                  if (n.marked == false) {
+                      n.marked = true;
+                      queue.enqueue(n);
+                  }
+              }
+          }
+      }  
+      ```
     * Bidirectional Search
+        * Find the shortest path between a source and destination node.
+        * Running two simultaneous **breadth-first searches (BFS)**, one from each node. 
+        * When their searches collide, we have found a path.
 
 ---
 
