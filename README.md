@@ -1,7 +1,7 @@
 ## CtCI 6 Solutions
 
 
-
+#### [Ch1 Arrays And Strings](./src/Ch1_ArraysAndStrings)
 
 
 
