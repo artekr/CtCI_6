@@ -33,6 +33,10 @@ public class RouteBetweenNodesTest {
     return graph;
   }
 
+
+  /**
+   *
+   */
   public static void main(String[] args) {
 
     Graph g = createNewGraph();
@@ -43,6 +47,10 @@ public class RouteBetweenNodesTest {
 
     RouteBetweenNodes Test = new RouteBetweenNodes();
     System.out.println(Test.findRoute(g, start, end)); // Expected: true
+
+    GraphNode start_2 = nodes[1];
+    GraphNode end_2 = nodes[5];
+    System.out.println(Test.findRoute(g, start_2, end_2)); // Expected: false
 
   }
 }

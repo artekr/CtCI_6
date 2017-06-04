@@ -5,15 +5,17 @@ package Ch4_TreeAndGraph;
  */
 public class GraphNode {
 
-  private GraphNode adjacent[];
-  public int adjacentCount;
-  private String vertex;
-
+  // State Enum to mark the Graph Node
   public enum State {
     Unvisited,
     Visited,
     Visiting;
   }
+
+  private GraphNode adjacent[];
+  public int adjacentCount;
+  private String vertex;
+  public State state;
 
   /**
    * Graph Node constructor
