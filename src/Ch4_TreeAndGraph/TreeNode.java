@@ -7,11 +7,20 @@ package Ch4_TreeAndGraph;
 
 public class TreeNode {
 
-  int val;
-  TreeNode left;
-  TreeNode right;
+  public int val;
+  public TreeNode left;
+  public TreeNode right;
 
-  TreeNode(int x) {
+  public TreeNode(int x) {
     val = x;
   }
+
+  public static void printBinaryTree(TreeNode root) {
+    if (root != null) {
+      printBinaryTree(root.left);
+      System.out.println(root.val);
+      printBinaryTree(root.right);
+    }
+  }
+
 }
